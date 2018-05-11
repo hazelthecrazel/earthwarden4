@@ -1,0 +1,524 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#000000;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #777777;}
+
+#imgbox1 {
+position:absolute;
+width:32%;
+height:100%;
+top:0%;
+left:0%;
+}
+
+#imgbox2 {
+position:absolute;
+width:32%;
+height:100%;
+top:0%;
+left:68%;
+}
+
+#bigbox1 {
+position:absolute;
+border:2px solid #333333;
+background-color:#111111;
+width:25%;
+height:40%;
+top:5%;
+left:42%;
+}
+
+#bigbox1:hover {
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+#bigbox2 {
+position:absolute;
+border:2px solid #333333;
+background-color:#111111;
+width:25%;
+height:40%;
+top:54%;
+left:42%;
+}
+
+#bigbox2:hover {
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+#textbox1 {
+position:absolute;
+padding:2%;
+background-color:#333333;
+border:1px solid #555555;
+overflow:auto;
+width:85%;
+height:75%;
+top:14%;
+left:5%;
+color:#ffffff;
+font-family:PT Sans Narrow;
+font-size:80%;
+}
+
+#textbox2 {
+position:absolute;
+padding:2%;
+background-color:#333333;
+border:1px solid #555555;
+overflow:auto;
+width:85%;
+height:75%;
+top:14%;
+left:5%;
+color:#ffffff;
+font-family:PT Sans Narrow;
+font-size:80%;
+}
+
+#title1 {
+position:absolute;
+background-color:#333333;
+border:1px solid #555555;
+border-left:5px solid #555555;
+padding:2%;
+width:84%;
+height:2%;
+top:4.5%;
+left:5%;
+color:#777777;
+font-family:PT Sans Narrow;
+font-size:80%;
+line-height:50%;
+letter-spacing:5px;
+}
+
+#title2 {
+position:absolute;
+background-color:#333333;
+border:1px solid #555555;
+border-left:5px solid #555555;
+padding:2%;
+width:84%;
+height:2%;
+top:4.5%;
+left:5%;
+color:#777777;
+font-family:PT Sans Narrow;
+font-size:80%;
+line-height:50%;
+letter-spacing:5px;
+}
+
+#tabbox1 {
+position:absolute;
+border:2px solid #333333;
+border-radius:100%;
+width:5%;
+height:10%;
+top:5%;
+left:33%;
+background-image: url('https://i.imgur.com/FXrGu1T.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover {
+background-color:#333333;
+background-image: url('') !important; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+#tabbox2 {
+position:absolute;
+border:2px solid #333333;
+border-radius:100%;
+width:5%;
+height:10%;
+top:25%;
+left:33%;
+background-image: url('https://i.imgur.com/oCDsZ0q.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2:hover {
+background-color:#333333;
+background-image: url('') !important; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+
+#tabbox3 {
+position:absolute;
+border:2px solid #333333;
+border-radius:100%;
+width:5%;
+height:10%;
+top:45%;
+left:33%;
+background-image: url('https://i.imgur.com/Gi9YcqZ.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3:hover {
+background-color:#333333;
+background-image: url('') !important; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+
+#tabbox4 {
+position:absolute;
+border:2px solid #333333;
+border-radius:100%;
+width:5%;
+height:10%;
+top:65%;
+left:33%;
+background-image: url('https://i.imgur.com/6F1Y5hF.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4:hover {
+background-color:#333333;
+background-image: url('') !important; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+
+#tabbox5 {
+position:absolute;
+border:2px solid #333333;
+border-radius:100%;
+width:5%;
+height:10%;
+top:85%;
+left:33%;
+background-image: url('https://i.imgur.com/rW2rq6d.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5:hover {
+background-color:#333333;
+background-image: url('') !important; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+box-shadow: 0px 0px 19px 3px rgba(255,255,255,1);
+}
+
+
+.tabs{
+display:block;
+opacity:0;
+width:100%;
+height:100%;
+border-radius:100%;
+font-size: 100%;
+color: #ffffff;
+font-family: PT Sans Narrow;
+text-align:center;
+line-height:450%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10 {
+display: none;
+}
+
+a {
+color:#777777;
+}
+
+h1 {
+color: #999999;
+font-family: Dancing Script;
+text-align:center;
+font-size: 120%;
+}
+
+i {
+font-size: 90%;
+color:#999999;
+}
+
+b {
+font-size: 90%;
+color:#999999;
+font-family: Dancing Script;
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans+Narrow" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('textbox1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('textbox2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('title1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('title2').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="imgbox1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/zi4C7be.png"/>
+</div>
+
+<div id="imgbox2">
+<img style="width:70%;margin-top:0%;margin-left:25%;" src="https://i.imgur.com/rp5mAJx.png"/>
+<img style="width:50%;margin-top:-32%;margin-left:40%;" src="https://i.imgur.com/rZ6397D.png"/>
+</div>
+
+<div id="bigbox1">
+<div id="title1">
+Basic Information
+</div>
+<div id="textbox1">
+<b>Name:</b> Kina Buvelle<br>
+<b>Title:</b> The Earth Warden<br>
+<b>Physical Age:</b> Early Twenties <br>
+<b>True Age:</b> 18 years old<br>
+<b>Birthdate:</b> April 3<br>
+<b>Gender:</b> Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Human<br>
+<b>Nationality:</b> British<br>
+<b>Talents:</b> Leadership, First Aid<br>
+<b>Occupation:</b> Student at Ulreich University<br>
+<b>Unique Magic Tree:</b> Earth Warden<br>
+<b>Primary Magic Tree:</b> Faith<br>
+<b>Secondary Magic Tree:</b> Geomancy (Mage Rank)<br>
+<b>Rank:</b> Archmage<br>
+<b>Height:</b> 5'5"<br>
+<b>Weight:</b> 132 lbs<br><br>
+<H1>Detailed Information</H1><br><br>
+<b>Appearance</b><br> 
+Kina's body doesn't have the distinct hourgglass figure that a lot of girls have, her shape making more of a curve than a point to her waist and leads down into another smooth curve to her hips and long legs. Her skin is a light peach shade, some considering her to be pale. Her platinum blonde hair frames her skin causing her to look a little darker than she really looks.<br>
+Her facial structure is distinctly European, her narrow nose pricking up at the tip as well as her plump pink lips. Kina's cheekbones are the widest part of her face which causes it to have a slight heart shape that leads into her narrow jaw which fits her overall frame perfectly. Her baby blue eyes are often described as piercing.<br><br>
+<b>Personality</b><br>
+Kina is a fairly kind individual, often putting the needs of others beyond her own. She would do next to anything to help another if the need proposed itself to her, given it be something she is able to help with. Calm and contemplative, she lost most her impulsiveness and temperament issues quickly after arriving at Ulreich.<br>
+Kina still has her sense of humor and is still slightly feisty but she gained a bit more gentleness. She now strives to uphold peace and promote prosperity but is definitely not above fighting for what she believes is right, especially it is keeps those she loves out of danger.
+<br><br>
+</div>
+</div>
+
+<div id="bigbox2">
+<div id="title2">
+History
+</div>
+<div id="textbox2">
+<H1>Before Ulreich University</H1>
+It was a version of the new world unlike any other. It had been perfectly aligned with the original New World’s timeline before straying off into a unique path. For this version, there was no Renaissance era. So, instead of an explosion of art, the world had a technological boom. This allowed the human race to have access to higher forms of technology, and fast forwarded into the present time, the scene was unbelievable.<br><br>
+It was exactly what many fantasy/science fiction storybooks had foretold for hundreds or thousands of years into the future, although it was simply April third in the year 2057. In London, England, a small baby girl was born with bright blonde hair and striking blue eyes. Kina, as the child would be named, was an odd yet caring creature. She would often bring in stray animals that she found on her own little adventures around the street block that she lived on to her father who would patch them up and nurse them back to health until they found an owner worthy of the girl’s standards.<br><br>
+The only reason her father was around the house full time was because her mother, Alice Buvelle, was a high ranking Officer in the British Tech Navy. The Tech Navy was a branch of the military that oversaw Sea warfare, as well as pushing the exploration of the sea floor through the help of specialized undersea machines crafted out of a high durability metal alloy that allowed them to delve as far deep into the ocean without succumbing to underwater pressure and causing an internal collapse of the vehicle. Over time the relationship between mother and daughter dwindled into nothing.<br><br>
+Kina had many friends growing up, and even attended a highly expensive private school that offered the best education in all of England. These friends of hers would tell her stories about the holidays that they spent together with their happy family and she realized that..comparing her personal experiences to her friends’, she didn’t have a very happy family. Her mother wasn’t home very often, and when she was the woman barraged her father with verbal abuse. They never celebrated the holidays, never visited family for functions. She lived a closed and sad life.<br><br>
+Around the age of fifteen, horrifying news struck her like a cold slap to the face. Her mother had sold falsified evidence that the United Kingdom had been testing out nukes that were laced with explosive mana, in effect creating a radioactive bomb, on sparse locations in Russia and the United States, and caused many unborn, newborns, and young children to develop grotesque physical mutations. She did this for magic power, which both angered and terrified the girl. In a flash, a war was upon them.<br><br>
+The war itself wasn’t fought with technology, for the most part the most dominating factor was magic, but technology certainly supported it. The battles fought throughout the United Kingdom were so high in mana concentration that it caused a temporal rift to open up outside of Dover. Eager to escape the havoc, Kina raced through it without a second thought. This rift transported her to the far reaches of the Free Lands in the Esmerelda Isles. This was unknown to her at the time, but quickly she found Ulreich University and vowed that as soon as she was strong enough to return, she would.<br><br>
+She would return to end her mother’s madness, to restore peace to her now broken world.<br><br>
+And return she did. Two and a half years after her departure, with many of her newfound companions, Kina made the trek back up to the Free Lands' mountain ranges. They passed through the rift back into the land of her birth and after completeing the trial of defeating her mother's power conduits, they were able to breach the shield surrounding London. There they would find Kina's mother, a now extremely powerful mage wielding two mixed trees of maximum rank. Through much effort, they were able to defeat her without sustaining any losses. They returned back to Ulreich where Kina would fall into a depressive spiral.<br><br>
+For months she hid away in the safety and isolation of her dorm room, barely eating or interacting with the outside world. She went through a series of suicidal thoughts, but it hit her. Why kill herself? After all she'd been through, why put the people she loved in pain because of her own selfish desire to escape the guilt of killing her mother. She had done it for a good cause, it had taken its toll on her, but now she had a decision to make. End it all, or get back up and work through the pain, the suffering, to restore herself back to her former glory as a gifted Faith mage protecting and healing those in need. She chose the latter. Now she returns to her mission to achieving maximum rank to be as much use to the school as possible.<br><br>
+<br><br>
+</div>
+</div>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation2 ('tab2')">1</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation2 ('tab4')">2</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation1 ('tab5');changeNavigation3 ('tab6')">3</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation1 ('tab7');changeNavigation3 ('tab8')">4</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation1 ('tab9');changeNavigation3 ('tab10')">5</span>
+</div>
+
+<div id="tab1">
+<b>Incandescence ( High Mage Medium )</b><br> 
+Whilst this shield is summoned, all of Kina's buffs' durations are increased by 1.5x of their normal time, and the defensive capabilities of her spells such as Angelic Bulwark are increased by 1.75x. Her geomancy spells also get boosted, the length, width, and height of all of her spells getting increased by 1.5x, all except her Sandstorm spell. It's durability is equal to that of tungsten, and is very resistant to magic and physical forces alike.<br><br>
+<b>Death's Embrace</b><br> 
+A magically enhanced Warhammer retrieved from the siege of Kre'nath. This hammer gives it's holder 2x their base strength, allowing them to wield it with both hands much easier. If struck on any solid surface with enough force, the hammer releases a ring of ice from the point of impact in a three foot radius, the explosive force being enough for the ice to cut through anything equal to or below an Iron density. The handle and the hammer head are both made of Cobalt and the handle is five and a half feet tall, the head adding another foot. This puts it at a whopping six and a half feet tall. The hammer head has a two foot span from handle to each end, making it four feet long in total while being one foot in width.<br><br>
+<b>Standard Armor</b><br> 
+A simple suit of fitted leather amor that is flexible enough to bend in comprimising situations without ripping the leather. In key points, such as he knes, gauntlets, shoulders, elbows, feet, etc. they are reinforced with iron to make them more durable. These sections may take one attack of mage rank before breaking.<br><br>
+<b>Dagger</b><br> 
+A standard six inch iron dagger with an iron-grade handle with grooves to fit the fingers. This handle is covered in leather straps that make it easier to grip and has several runic designs on it that do not affect the weapon overall. This dagger may pierce through iron-grade materials but may also be broken by attacks of the same grade if hit.<br><br>
+</div>
+<div id="tab2">
+Inventory
+</div>
+
+<div id="tab3">
+<b>Mana Manipulation</b><br>
+The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level.<br><br>
+<b>Unique Archmage Mana Type</b><br>
+Earth Warden Mana is a combination of both her Faith Mana and her Geomancy Mana types. This mana is capable of being manifested in both physical and essence-based forms while also being capable of being infused into both sentient and non-sentient beings. Direct contact with Earth Warden mana in its base state without spells will automatically begin healing minor injuries such as scrapes, small cuts, bruises, etc., and when in its base form it may have a physical durability of up to iron strength. Can not be used to harm in any way, shape, or form.<br><br>
+<b>Faith Mana</b><br>
+Mana which cannot do damage in any form. This mana is usually very warm and pleasant, and sometimes even gives off relaxing scents.<br><br>
+<b>Earth Mana</b><br>
+Mana which manifests itself as dirt, mud, dust, etc.<br><br>
+<b>Personalized Mana</b><br> 
+Kina's mana, when visible to the naked eye, appears as an aura of bright gold, yet has a thin inner and outer border of a muted shade of brown that blends perfectly into the gold hues. Browns and other nude shades can be seen as small particles drifting inside of her aura.<br><br>
+<b>Mana Weave</b><br> 
+The simple act of moving one's mana pool through their own body. Channeling one's mana<br><br>
+<b>Mana Spark</b><br> 
+A basic mana projectile that can be used offensively or defensively. It causes no real damage other than a small sting when hit directly in the flesh.<br><br>
+<b>Mana Pane</b><br> 
+When focusing one's mana before them and swirling it in a vortex quickly and violently, one may allow their mana to harden, causing a thin pane to form. This spell can only be used defensively and the power it can block is minimal, ranking at iron toughness. This spell can be learned by anyone of mage rank and above, but upon reaching high mage, one may cast two of these at a time, one for each hand.<br><br>
+<b>Mana Beacon</b><br>
+This spell is cast by concentrating on one's mind and projecting mana outwards like a sudden flash of light. Although this does not produce any visual effects, it sends a beacon-like pulse of mana outwards from ones body which can be picked up an interpreted by other mages who have learned this spell. It does not convey any message, rather a simple alarm. This can be used to send a cry for help to people within a set area of your character.<br><br>
+<b>Spirit Beacon</b><br> 
+An upgrade to Mana Beacon, rather than projecting one's mana from the mind in a pulse, this requires focus to be gathered to one's very core of being until released into the world around them. It scatters outward in a pulse like Mana Beacon, but is targeted specifically at Faith Mages, Necromancers and Spiritualists, intended to only be sensed by mages who follow those trees. While it opens up the possibility of being detected over a vaster distance (still within the same chat but a considerably larger range, with some very specific exceptions), it also offers the opportunity to warn aforementioned mages that a spirit may be disconnected from the body (recently or will be soon) and will require a guide back for revival. Upon reaching Expert Mage, focusing on this spell as it is being cast will allow the caster to choose which specific type of previously listed mage (Faith, Necromancer, Spiritualist) they desire to be able to sense their beacon.<br><br>
+<b>Gel Sphere</b><br> 
+By creating a mana spark and continuing to weave your mana around the spark like a web, eventually the orb one forms will expand into a small sphere of an incredibly adhesive substance. Once casted, this spell lasts for three posts, and has a toughness of aluminum.<br><br>
+<b>Summon Medium</b><br> 
+A spell that allows a user to transport their medium from a previous location into their hands. Only one medium can be used at a time with this spell, and can include HMM's, as well as basic objects and weapons. To change one's medium, one must use it at least once before being able to actively summon it.<br><br>
+<b>Mana Meditation</b><br> 
+This spell takes two posts, the first post charges the spell, the second post activates it. If a mage meditates on whatever is causing them pain or discomfort--meaning they focus their undivided attention inward or to whatever specific part of their body is hurting--and slowly weave their mana to that particular place, they will be able to activate this spell. Mana Meditation increases a mage's natural pain tolerance slightly and can calm whatever natural shock they may be experiencing, allowing them to function better. Natural shock meaning the universal spell won't work on magic based shock<br><br>
+<b>Mana Rehabilitation</b><br> 
+This spell takes two posts, the first post charges the spell, the second post activates it. If a mage temporarily focuses on whatever is causing them pain or discomfort--meaning they focus their most of their attention inward or to whatever specific part of their body is hurting or being affected by an external source--and weave their mana to that particular place, they will be able to activate this spell. Mana Rehabilitation increases a mage's natural pain tolerance by x1.5 and can calm whatever natural shock or magic based shock (spells that cause pain/shock/discomfort of up to Mage rank) that part of their body may be experiencing. (Can take a tiny bit of edge off higher ranked spells, but not very much, will mainly be ineffective to anything higher than mage rank.)<br><br>
+<b>Mana Parry</b><br> 
+In a complicated set of movements, the caster must create a solidified pane of mana upon an appendage or object, and swipe it against an incoming projectile. Upon contact, the caster has a split second to match their mana levels with the opposing spells, which causes the projectile to meld with the casters mana and remove all secondary effects from the energy. This causes the spell to fly off in a random direction, reverted to base mana but still powerful enough to do damage based on the rank of the attack. Casters who use this can only do so on spells of their rank and below, and to do so costs the exact same amount of mana as the spell in question, so one should keep this in mind before parrying anything. Projectiles that have special effects such as detonation, or abilities that can be triggered mid flight can be activated before a spell is able to be parried.<br><br>
+<b>Mana Retaliate</b><br> 
+An upgrade to Mana Parry, this technique requires the user to weave their magic into a point of contact (such as their hand or a medium) and double the amount of mana within an incoming projectile. Upon swiping the point of contact against the opposing force, the extra mana will override the attack and transform it into an orb-like blob of magic. The caster of Retaliate must push this slow-moving orb back toward them, and break it open before it makes contact with their body. This can be done by any basic projectile, such as mana parry, and will shatter the magic into three separate and more solid components. These shattered pieces are about the size of a fist, and shaped in an almost arrow-like manner; they fly at a relatively high speed in intricate and hard to follow patterns that eventually track the original attackers location for up to 60 feet away. Upon reaching five feet from their target, the three shards scatter, sending the brightest of the trio at the front of the attacker, while the other two dull projectiles attempt to pincer each of their sides. The frontal projectiles strength remains the same power as the original retaliated attack, and the two side projectiles work at about a rank lower. This cannot be used against projectiles above the casters rank.<br><br>
+
+</div>
+<div id="tab4">
+Mana Manipulation and Universal Spells
+</div>
+
+<div id="tab5">
+<H1>Faith</H1><br>
+<i>Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile, and no faith spell can ever cause harm to another being (unless faith magic specifically harms them). </i><br><br>
+<b>Heal</b><br>
+By projecting her mana through the palms of her hands, she floods the recipients body with white mana. The mana mends broken bones, internal bleeding, flesh wounds, and the like. The larger and more devastating the wound, the more mana the spell takes. This can not regenerate lost limbs.<br><br>
+<b>Cleanse</b><br>
+Another spell transmitted via touch. Cleanse targets both magic and physical ailments such as induced blindness, poisons, curses, and other effects. This spell can only cure spells equal to or less than Kina's rank. Does not affect spells she has no knowledge of.<br><br>
+<b>Fortitude</b><br>
+Blesses an ally target, increasing their physical abilities by 1.5x -- capping at 3x ( strength, endurance, vitality, speed ) and also doubles their pain tolerance. Lasts for five posts and requires some form of contact to cast on someone as well as requiring the target to be within 25 feet of her to retain their buff.<br><br>
+<b>Angelic Bulwark</b><br>
+By extending her mana from her body in a bubble shape, she forms a thick, protective bubble of mana, it's boundaries distinguished by it's dull golden glow. The spell is like a one-way mirror when it comes to casting spells; if a spell is cast from outside, the bubble absorbs it depending on it's magnitude and rank, and spells cast from inside pass freely. The shield may be passed like air, meaning that inside, it's open season. Can absorb up to one High Mage ranked spell ( varies depending on spell strength. )<br><br>
+<b>Sanctuary</b><br>
+Sending a burst of Faith mana into the ground, Kina blesses it in a thirty foot radius around her body, causing the ground to crack in a spiderweb pattern with light bursting from the cracks. While coating the bodies of selected targets whom are bathed in said light, it surrounds their body in a skin-tight suit of highly flexible and durable faith mana which acts as a defensive barrier. A maximum of five targets may be affected by this barrier at one time so long as they stay within the radius of the spell, and it gets progressively stronger depending on how many people it is being cast on while varying in overall mana cost for the same reason. I.E. 2 people get titanium-grade barriers, three people will get cobalt barriers, and five people will all get steel barriers. Each barrier may absorb up to one attack of its respective durability before breaking, and while affected by a barrier the target will receive a visionary buff that allows them to see through lesser ranking darkness also based on the strength of their shield ( lower grade barriers can see through darkness of their own durability rank or lower for up to an extra ten feet in front of them in complete darkness regardless of their barrier strength. ) Like the visionary buff, the spell itself emits a light which can pierce through darkness of equal rank or lower, unable to do so through stronger darkness, and will illuminate the area a good few feet around each crack just enough to be allow for basic -- albeit limited -- vision.<br><br>
+<b>Infusion</b><br>
+At the expense of the caster’s own mana by charging for one post and releasing it in a burst in a twenty foot radius around her, those hit will acquire a buff that allows them to use mana more efficiently, to use more spells without wasting as much mana. Infusion drops the average casting cost of the user’s next spells cast by one rank if equal to or below High Mage, or even two ranks if the user is equal to or below Mage rank. Infusion may affect up to four people at one time, who all have to stay within a thirty foot radius of the caster to keep their buff. This buff lasts for four posts, and rather than just buffing their next spell, it reduces the cost of all future spells cast while this buff is active on them, and requires one post to cool down.<br><br>
+<b>Apotheosis</b><br>
+A powerful buff that may be applied to barriers, rather than a person, this spell causes a strong defensive barrier over a pre-existing one through required contact with it via one of her own spells or direct contact with her body. This barrier allows the previous one to absorb up to one extra attack of High Mage ranking before breaking, or up to two if the barrier is of Mage rank. If the caster leaves a twenty foot radius of the buffed barrier then the buff will deactivate prematurely. Apotheosis lasts for four posts and then goes on a two post cool down timer.<br><br>
+<b>Sensory Pulse</b><br>
+By releasing a pulse of faith mana into the target, the spell works like echolocation. The mana bounces off of every part of them and returns to Kina, allowing her to "see" any internal and external injuries such as internal bleeding, respiratory problems, etc. This spells works to find both physical and magic induced problems and is able to detect harmful spells of up to HM+ rank. Does not detect spells that are intentionally hidden by the caster.<br><br>
+
+<b>
+</div>
+<div id="tab6">
+Faith Spells
+</div>
+
+<div id="tab7">
+<H1>Geomancy</H1><br>
+<i>A subcategory of the Elementalism tree, Geomancers specialize in the manipulation and manifestation of Earthen-based spells such as stones. They may start off weak with only stones and rubble at their disposal, but as they grow in strength they grow in power to be able to manipulate metals, gemstones, or even magma.</i><br><br>
+<b>Wall</b><br>
+Erects a six foot tall, three four foot wide, and three foot thick wall of whichever substance she chooses. Lasts for three posts or until destroyed.<br><br>
+<b>Earthen Needles</b><br>
+Forms the earth into jagged, pointed needles of rock ( which have an iron durability ), and sends them towards a target. These are projectile spells, and four can be summoned at a time. Can pierce iron defenses with multiple hits.<br><br>
+<b>Spikes</b><br>
+Summons a five foot long spike of iron grade rock from the ground, making obstacles and dealing damage on impact. These spikes can pierce up to iron defenses and only one can be summoned at a time.<br><br>
+<b>Sandstorm</b><br>
+By expelling torrents of sand from the palms of her hand, she manipulates the sand created and whirls it around her body like a twister along with any debris it can pick up. This spell is capable of dealing light damage once per post, and heavily reducing eyesight for up to thirty feet from her. <br><br>
+<b>Rock Armament</b><br>
+Focusing her mana around her fists, she wills it to become her tree's respective physical element: Rock. This causes rock to form around her fists, molding to the shape of her hands to form large gauntlets of solid stone which have the durability of Iron. She is able to flex her hands within the gauntlet, which in turn causes the gauntlet to follow her movements like any other normal set of gloves. If she is able to connect a solid punch, the weight behind the punch could easily break bones. The gauntlets are easily fourty each, but to her they feel closer to ten pounds. Can break through Iron defenses with multiple hits.<br><br>
+</div>
+<div id="tab8">
+Geomancy Spells 
+</div>
+
+<div id="tab9">
+<H1>Earth Warden; Faith + Geomancy (Archmaage)</H1><br>
+<i>A rank path unlike any other. The mages which choose to follow this path will fuse their major and minor trees, creating an all new tree completely unique to themselves. Mages who's two trees each possess a unique mana type will now possess an entirely new mana type, which incorporates aspects of both of their previous mana types. Archmages will still be able to create and use spells from their individual trees.</i><br><br>
+<b>Gaia's Shield</b><br>
+Erects a physical barrier that is ten feet wide and tall in a horizontal dome shape. While being cast, the direction that she's facing that front of the dome will form in two layers - A faith and an earthern layer making it much stronger at the front than at the back where they combine and mix into just one. The barrier has a tungsten durability and may be destroyed through two attacks of equal rank towards the front and is reduced to only one attack at the back side. May also take multiple titanium-grade attacks. Once destroyed, the barrier cracks and explodes, releasing sharp iron-grade shrapnel of rock in a fifteen foot radius away from her in all directions that can pierce iron defenses. These do not affect selective targets. The exploding effect may be triggered if the barrier is cracked or damaged but not destroyed yet.<br><br>
+<b>Rapture</b><br>
+Allowing her mana to build up in the pit of her chest, a dim light appears which grows in size and brightness until it completely enveloping her body in it. This light is bright enough to ward off non-magic darkness for up to fifteen feet around her and is hard to look at directly without sustaining minor eye damage. After building up for one post, this mana can be expelled in an omnidrectional burst with such a force that it knocks targets of up to twice the strength of an average human fifteen feet on the ground. This is increased to a full thirty feet if they are flying through the air, and reduced to ten if they are anchoring themselves to the ground in some way. Rapture has a thirty foot radius. This burst does not do damage, more or less a push to clear crowds. Selective targets -- capping out at five -- may receive minor healing to the extent of a twisted ankle. On the flip side, though, Kina may choose up to four places in which one individual iron-grade spike may be formed as the burst is released within Rapture’s blast radius, but has to be looking in the direction that the spikes are going to rise from and are all three feet in length, jutting out from the ground at awkward angles rather than straight up.<br><br>
+<b>Gift of Stone</b><br>
+A powerful buff that increases the physical strength of those it is cast upon by 3x, capping out at 5x overall. By using the strength of earth and the power of Faith barriers, this spell is capable of increasing the target’s durability up to Titanium, allowing them to block attacks of lower ranking but an equal durability attack will still be able to damage the body in one hit rather than multiple goes in comparison to cobalt-grade attacks. This buff may be cast on up to two people, both higher and lower ranking than she, and the durability buff scales to the mage’s appropriate rank, but caps out at tungsten. While still being able to buff a max ranking mage, this durability increase will only scale up to tungsten rather than diamond at its current standing. When used on more than one person, the durability cap will go down by one level, meaning that if she buffs herself and a max ranking mage, both of them will acquire a Titanium durability increase rather than a Titanium and Tungsten one. This buff lasts for four posts and goes on a one post cooldown after being cast, those affected with Gift of Stone are required to stay within 40 feet of Kina in order to retain their buff.<br><br>
+<b>Purify</b><br>
+Due to the melding of her pre-Archmage mana types, Kina's mana has taken the next step towards the ultimate goal of removing corruption. By releasing this mana type through her palms, she is able to cast a cleansing spell more powerful than her base Cleanse. This spell is capable of both curing cursed items of up to High Mage rank as long as she is aware of it ( 1 rotation for curses of ranks lower than HM, 2 for HM curses and requires constant contact with the cursed item ), and may even very slowly and with much effort begin to remove corruption from nonbiological earth-based substances as well as battle low and minor traces of corruption from fellow students/patients (can be more effective for heavier corruption damage but will HEAVILY drain mana through multiple casts). This won't regenerate limbs lost or any of the damage that the corruption did to the host, but it will certainly help the cause. ( Works on High Mage rank or lower for DM'd monsters ) Purify can not be used to cure corrupt fiends but may work on the corruption that they spread. Using this spell will always leave her feeling exhausted and may only be used on corrupt patients/cursed items/corrupted earth. Will not affect essence-based corruption or corruption that is formed out of pure energy to any extent.<br><br>
+<b>Earth's Beating Heart</b><br>
+Kina draws from the very essence that the magic world beneath her feet offers from its core, channeling it from the ground and into her palms. The act of pulling the power from the soil will cause the ground to begin to lightly rumble in response in a twelve foot radius around her. Particles of what seem to be golden specs appear to be manifesting itself out of the dirt gravitate towards her, surrounding her like a beacon while she charges the spell. It’s certainly noticeable but definitely can not harm structures or disrupt movement. With the mana coalesced in her hands, they begin to glow a muted shade that appears to be a mix of gold and brown, making for a color that is easy on the eyes and oddly natural. Through physical contact only, she may let this mana flow into a severely injured target and will begin to stitch together torn flesh, muscles, broken bones, as well as regrow up to one limb per cast, over a short period of time. A healing spell powerful enough to bring back a creature from the very brink of death, but may not revive in any way a deceased target. Earth’s Beating Heart is also able to remove harmful entities from the body ( I.E. curses, poisons, bacteria. Does not affect soul-based damage.) so long as she is aware of these things and is of high enough rank to dispel them. This spell is used at a high physical cost, as well as mana. Using this will leave her feeling exhausted and sweating and takes a large chunk out of her mana pool. This spell takes one post to charge and then may be cast on the second post.<br><br>
+</div>
+<div id="tab10">
+Earth Warden Spells
+</div>
